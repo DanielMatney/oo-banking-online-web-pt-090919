@@ -20,6 +20,7 @@ class Transfer
       @status = "complete"
     elsif sender.valid? != true || receiver.valid != true
       return "Transaction rejected. Please check your account balance."
+      @status = "rejected"
     end
   end
 end

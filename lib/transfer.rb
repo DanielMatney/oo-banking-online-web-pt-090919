@@ -18,6 +18,7 @@ class Transfer
       sender.balance -= @amount
       receiver.balance += @amount
       @status = "complete"
+    elsif sender.valid?
     end
   end
 end
